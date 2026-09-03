@@ -45,26 +45,28 @@
 
 ======================
 
+```
 src/
 ├── components/
-│ ├── CardsPage/ # Основная страница с карточками
-│ │ ├── CardsPage.tsx # Контейнер: собирает всё вместе
-│ │ ├── CardsPage.styles.ts # Стили для страницы
-│ │ ├── SearchFilters/ # Блок поиска (переиспользуемый)
-│ │ ├── PaginationControls/ # Блок пагинации
-│ │ ├── PokemonCard/ # Карточка покемона (React.memo)
-│ │ ├── PokemonModal/ # Модалка с деталями (React.memo)
-│ │ └── SkeletonGrid/ # Скелетоны для загрузки
-│ ├── HomePage/ # Главная страница с описанием проекта
-│ └── MainPage/ # Обёртка с навигацией (React Router)
-├── hooks/ #
-│ └── usePokemonFilter.ts # Кастомный хук с useMemo
-├── types/ #
-│ └── Pokemon.ts # Все TypeScript интерфейсы
-├── utils/ #
-│ └── pokemon.ts # Утилиты: upperWord, formatTypes, getTypeColor
-├── App.tsx #
-└── main.tsx #
+│   ├── CardsPage/
+│   │   ├── CardsPage.tsx          # Контейнер: собирает всё вместе
+│   │   ├── CardsPage.styles.ts    # Стили для страницы
+│   │   ├── SearchFilters/         # Блок поиска (переиспользуемый)
+│   │   ├── PaginationControls/    # Блок пагинации
+│   │   ├── PokemonCard/           # Карточка покемона (React.memo)
+│   │   ├── PokemonModal/          # Модалка с деталями (React.memo)
+│   │   └── SkeletonGrid/          # Скелетоны для загрузки
+│   ├── HomePage/                  # Главная страница с описанием проекта
+│   └── MainPage/                  # Обёртка с навигацией (React Router)
+├── hooks/
+│   └── usePokemonFilter.tsx       # Кастомный хук с useMemo
+├── types/
+│   └── Pokemon.ts                 # Все TypeScript интерфейсы
+├── utils/
+│   └── pokemon.ts                 # Утилиты: upperWord, formatTypes, getTypeColor
+├── App.tsx
+└── main.tsx
+```
 
 **Принципы архитектуры:**
 
